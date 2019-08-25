@@ -2,15 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.alibaba.datax</groupId>
         <artifactId>datax-all</artifactId>
+        <groupId>com.alibaba.datax</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.alibaba.datax</groupId>
-    <artifactId>otsstreamreader</artifactId>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>hbkafkawriter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <kafka.version>2.2.1</kafka.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -22,47 +27,38 @@
                     <artifactId>slf4j-log4j12</artifactId>
                     <groupId>org.slf4j</groupId>
                 </exclusion>
-                <exclusion>
-                    <artifactId>logback-classic</artifactId>
-                    <groupId>ch.qos.logback</groupId>
-                </exclusion>
             </exclusions>
         </dependency>
-        <!--Other 依赖 -->
+
         <dependency>
-            <groupId>com.aliyun.openservices</groupId>
-            <artifactId>tablestore-streamclient</artifactId>
-            <version>1.0.0</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.2.4</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
-            <scope>test</scope>
+            <version>16.0.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
     </dependencies>
+
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                </includes>
-            </resource>
-        </resources>
         <plugins>
             <!-- compiler plugin -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>${project-sourceEncoding}</encoding>
                 </configuration>
             </plugin>

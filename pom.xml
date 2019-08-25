@@ -60,7 +60,6 @@
         <module>ftpreader</module>
         <module>mongodbreader</module>
         <module>rdbmsreader</module>
-        <module>hbase11xreader</module>
         <module>hbase094xreader</module>
         <module>opentsdbreader</module>
 
@@ -81,13 +80,11 @@
         <module>adswriter</module>
         <module>ocswriter</module>
         <module>rdbmswriter</module>
-        <module>hbase11xwriter</module>
         <module>hbase094xwriter</module>
-        <module>hbase11xsqlwriter</module>
-        <module>hbase11xsqlreader</module>
         <module>elasticsearchwriter</module>
         <module>tsdbwriter</module>
         <module>adbpgwriter</module>
+        <module>hbkafkawriter</module>
         
         <!-- common support module -->
         <module>plugin-rdbms-util</module>

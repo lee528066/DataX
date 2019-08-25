@@ -1,0 +1,6 @@
+{
+  "name": "hbkafkawriter",
+  "class": "com.alibaba.datax.plugin.writer.kafkawriter.HbKafkaWriter",
+  "description": "哈啰业务中台kafka writer",
+  "developer": "lee"
+}

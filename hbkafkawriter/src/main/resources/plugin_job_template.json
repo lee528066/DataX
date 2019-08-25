@@ -1,0 +1,8 @@
+ {
+     "name": "hbkafkawriter",
+     "parameter": {
+         "topic":"",
+         "bootstrapServers":"localhost:9092",
+         "fieldDelimiter": ","
+     }
+}
