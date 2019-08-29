@@ -54,13 +54,10 @@
         <module>otsreader</module>
         <module>otsstreamreader</module>
         <module>txtfilereader</module>
-        <module>hdfsreader</module>
         <module>streamreader</module>
         <module>ossreader</module>
-        <module>ftpreader</module>
         <module>mongodbreader</module>
         <module>rdbmsreader</module>
-        <module>hbase094xreader</module>
         <module>opentsdbreader</module>
 
         <!-- writer -->
@@ -68,8 +65,6 @@
         <module>drdswriter</module>
         <module>odpswriter</module>
         <module>txtfilewriter</module>
-        <module>ftpwriter</module>
-        <module>hdfswriter</module>
         <module>streamwriter</module>
         <module>otswriter</module>
         <module>oraclewriter</module>
@@ -80,7 +75,6 @@
         <module>adswriter</module>
         <module>ocswriter</module>
         <module>rdbmswriter</module>
-        <module>hbase094xwriter</module>
         <module>elasticsearchwriter</module>
         <module>tsdbwriter</module>
         <module>adbpgwriter</module>
@@ -89,8 +83,6 @@
         <!-- common support module -->
         <module>plugin-rdbms-util</module>
         <module>plugin-unstructured-storage-util</module>
-        <module>hbase20xsqlreader</module>
-        <module>hbase20xsqlwriter</module>
     </modules>
 
     <dependencyManagement>

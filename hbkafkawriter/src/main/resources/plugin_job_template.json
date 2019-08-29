@@ -1,8 +1,11 @@
- {
-     "name": "hbkafkawriter",
-     "parameter": {
-         "topic":"",
-         "bootstrapServers":"localhost:9092",
-         "fieldDelimiter": ","
-     }
+{
+  "name": "hbkafkawriter",
+  "parameter": {
+    "topic": "",
+    "bootstrapServers": "localhost:9092",
+    "username": "xx",
+    "password": "xx",
+    "jdbcUrl": "jdbc:postgresql://127.0.0.1:3002/datax",
+    "table": "test"
+  }
 }
